@@ -258,17 +258,6 @@ F 3 "" H 4350 2800 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L SW_PUSH_SMALL_H SW2
-U 1 1 58B013E5
-P 5800 1150
-F 0 "SW2" H 5880 1260 50  0000 C CNN
-F 1 "Sw1" H 6000 1100 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 5800 1350 50  0001 C CNN
-F 3 "" H 5800 1350 50  0000 C CNN
-	1    5800 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L R_Small R4
 U 1 1 58B027EB
 P 7050 1600
@@ -355,17 +344,6 @@ F 1 "470R" V 8700 1500 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 8650 1600 50  0001 C CNN
 F 3 "" H 8650 1600 50  0000 C CNN
 	1    8650 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L SW_PUSH_SMALL_H SW1
-U 1 1 58B43CA9
-P 5800 900
-F 0 "SW1" H 5880 1010 50  0000 C CNN
-F 1 "Sw1" H 6000 850 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 5800 1100 50  0001 C CNN
-F 3 "" H 5800 1100 50  0000 C CNN
-	1    5800 900 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -572,17 +550,6 @@ F 3 "" H 7850 1600 50  0000 C CNN
 	1    7850 1600
 	1    0    0    -1  
 $EndComp
-$Comp
-L SW_PUSH_SMALL_H SW3
-U 1 1 58BA046B
-P 5800 1400
-F 0 "SW3" H 5880 1510 50  0000 C CNN
-F 1 "Sw1" H 6000 1350 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 5800 1600 50  0001 C CNN
-F 3 "" H 5800 1600 50  0000 C CNN
-	1    5800 1400
-	1    0    0    -1  
-$EndComp
 NoConn ~ 5800 4450
 NoConn ~ 5800 4550
 $Comp
@@ -623,18 +590,12 @@ Text HLabel 8650 1750 3    60   Input ~ 0
 LED3_2
 Text HLabel 8450 1750 3    60   Input ~ 0
 LED3_3
-Text HLabel 5550 900  0    60   Input ~ 0
+Text HLabel 5850 850  2    60   Input ~ 0
 SW1
-Text HLabel 5550 1150 0    60   Input ~ 0
+Text HLabel 5850 1200 2    60   Input ~ 0
 SW2
-Text HLabel 5550 1400 0    60   Input ~ 0
+Text HLabel 5850 1550 2    60   Input ~ 0
 SW3
-Wire Wire Line
-	5550 1400 5650 1400
-Wire Wire Line
-	5550 1150 5650 1150
-Wire Wire Line
-	5550 900  5650 900 
 Wire Wire Line
 	8650 1500 8650 1450
 Wire Wire Line
@@ -664,7 +625,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 850  6850 750 
 Wire Wire Line
-	6250 750  9100 750 
+	5600 750  9100 750 
 Wire Wire Line
 	9100 750  9100 900 
 Wire Wire Line
@@ -673,17 +634,7 @@ Connection ~ 8450 750
 Wire Wire Line
 	7650 850  7650 750 
 Connection ~ 7650 750 
-Wire Wire Line
-	6250 750  6250 1400
-Wire Wire Line
-	6250 1400 5950 1400
 Connection ~ 6850 750 
-Wire Wire Line
-	5950 1150 6250 1150
-Connection ~ 6250 1150
-Wire Wire Line
-	5950 900  6250 900 
-Connection ~ 6250 900 
 Text HLabel 6850 3650 2    60   Input ~ 0
 LED2_1
 Text HLabel 5950 3850 2    60   Input ~ 0
@@ -1181,10 +1132,10 @@ $EndComp
 Wire Wire Line
 	9000 3800 9000 3700
 $Comp
-L +5V #PWR?
+L +5V #PWR018
 U 1 1 58D1702F
 P 4600 6500
-F 0 "#PWR?" H 4600 6350 50  0001 C CNN
+F 0 "#PWR018" H 4600 6350 50  0001 C CNN
 F 1 "+5V" H 4600 6640 50  0000 C CNN
 F 2 "" H 4600 6500 50  0000 C CNN
 F 3 "" H 4600 6500 50  0000 C CNN
@@ -1197,4 +1148,90 @@ Wire Wire Line
 	4350 6550 4600 6550
 Wire Wire Line
 	4600 6550 4600 6500
+$Comp
+L AH201 D5
+U 1 1 58D1884C
+P 5350 1100
+F 0 "D5" H 5350 1350 60  0000 C CNN
+F 1 "AH201" H 5350 1250 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 5350 1100 60  0001 C CNN
+F 3 "" H 5350 1100 60  0001 C CNN
+	1    5350 1100
+	0    -1   1    0   
+$EndComp
+$Comp
+L AH201 D4
+U 1 1 58D1A5CC
+P 5350 750
+F 0 "D4" H 5350 1000 60  0000 C CNN
+F 1 "AH201" H 5350 900 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 5350 750 60  0001 C CNN
+F 3 "" H 5350 750 60  0001 C CNN
+	1    5350 750 
+	0    -1   1    0   
+$EndComp
+$Comp
+L AH201 D6
+U 1 1 58D1A739
+P 5350 1450
+F 0 "D6" H 5350 1700 60  0000 C CNN
+F 1 "AH201" H 5350 1600 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 5350 1450 60  0001 C CNN
+F 3 "" H 5350 1450 60  0001 C CNN
+	1    5350 1450
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6250 750  6250 1450
+Wire Wire Line
+	6250 1100 5600 1100
+Connection ~ 6250 750 
+Wire Wire Line
+	6250 1450 5600 1450
+Connection ~ 6250 1100
+Wire Wire Line
+	5600 1550 5850 1550
+Wire Wire Line
+	5600 1200 5850 1200
+Wire Wire Line
+	5600 850  5850 850 
+$Comp
+L VCC #PWR019
+U 1 1 58D1B7C0
+P 5700 1000
+F 0 "#PWR019" H 5700 850 50  0001 C CNN
+F 1 "VCC" H 5700 1150 50  0000 C CNN
+F 2 "" H 5700 1000 50  0000 C CNN
+F 3 "" H 5700 1000 50  0000 C CNN
+	1    5700 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR020
+U 1 1 58D1B862
+P 5700 650
+F 0 "#PWR020" H 5700 500 50  0001 C CNN
+F 1 "VCC" H 5700 800 50  0000 C CNN
+F 2 "" H 5700 650 50  0000 C CNN
+F 3 "" H 5700 650 50  0000 C CNN
+	1    5700 650 
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR021
+U 1 1 58D1B8FD
+P 5700 1350
+F 0 "#PWR021" H 5700 1200 50  0001 C CNN
+F 1 "VCC" H 5700 1500 50  0000 C CNN
+F 2 "" H 5700 1350 50  0000 C CNN
+F 3 "" H 5700 1350 50  0000 C CNN
+	1    5700 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 1350 5700 1350
+Wire Wire Line
+	5600 1000 5700 1000
+Wire Wire Line
+	5600 650  5700 650 
 $EndSCHEMATC
