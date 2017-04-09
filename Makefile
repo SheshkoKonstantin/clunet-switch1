@@ -11,7 +11,7 @@ PROGRAMMER_PORT  = usb
 # Config options of CLUNET flash tool for optional 'program' target
 CLUNET_PATH      = .
 CLUNET_FLASHER   = /home/kosta/dev/clunet-gw/flash_util/util
-CLUNET_IP        = 192.168.88.14
+CLUNET_IP        = 192.168.88.136
 CLUNET_PORT      = 8888
 CLUNET_DEVICE_ID = 100
 
